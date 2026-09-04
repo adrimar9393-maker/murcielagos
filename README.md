@@ -6,7 +6,7 @@ Este repositorio contiene los datos, el código fuente en R y los resultados ín
 
 El objetivo principal de este trabajo es reconstruir la evolución de la ecolocación y la asociación con depósitos cavernícolas y kársticos, evaluando la robustez de las inferencias bajo dos marcos filogenéticos alternativos: la red morfológica masiva de Jones et al. (2024) y la topología molecular de Hand et al. (2023).
 
-## 🗂️ Estructura del repositorio
+##  Estructura del repositorio
 
 El análisis está diseñado para leer los datos de entrada y generar automáticamente la siguiente estructura de directorios de salida (`ASR_stochastic_mapping_outputs_publication/`):
 
@@ -21,14 +21,14 @@ El análisis está diseñado para leer los datos de entrada y generar automátic
     *   **`/Reference_ASR_trees`**: Reconstrucciones de estados ancestrales (ASR) proyectadas sobre el árbol MCC de Hand y el árbol de edades medias de Jones, incluyendo gráficos *pie chart* duales en formato PDF y PNG.
     *   **`/figures/08_probability_densitrees`**: Gráficos *densitree* de probabilidad enfrentados (Ostracoderm-style) generados con `ggtree` y `patchwork`.
 
-## 🔬 Metodología Analítica
+##  Metodología Analítica
 
 El código automatiza un flujo de trabajo filogenético comparativo completo:
 1.  **Calibración temporal (Jones et al., 2024):** Generación estocástica de árboles datados en puntas utilizando la edad media y muestreos aleatorios dentro del rango estratigráfico (FAD_low - FAD_up) mediante el paquete `paleotree`.
 2.  **Selección de modelos:** Comparación del ajuste empírico de modelos de transición evolutiva binaria: **ER** (Equal Rates), **SYM** (Symmetrical) y **ARD** (All-Rates-Different).
 3.  **Mapeo Estocástico Integrado (SIMMAP):** Reconstrucción de estados ancestrales ponderada por el peso de Akaike (AICw) de los modelos para capturar la incertidumbre de las tasas de transición y la varianza topológica de los fósiles basales (*stem bats* como *Onychonycteris*, *Icaronycteris* y *Vielasia*).
 
-## 🛠️ Requisitos y dependencias
+##  Requisitos y dependencias
 
 El script requiere **R (versión 4.0 o superior)**. El propio código incluye una función de autoinstalación para las dependencias faltantes. Los paquetes principales utilizados son:
 
@@ -52,12 +52,12 @@ El script requiere **R (versión 4.0 o superior)**. El propio código incluye un
 *   `ggnewscale`, `scales`, `grid`
 
 
-## ✒️ Autoría
+## Autoría
 
 * **Dr. Humberto Gracián Ferrón**
   Universitat de València
   Departamento de Paleontología
 
-**Adriana Martínez Arroyo**
-Universitat de València
-Máster en Biodiversidad, Conservación y Evolución
+* **Adriana Martínez Arroyo**
+  Universitat de València
+  Máster en Biodiversidad, Conservación y Evolución
