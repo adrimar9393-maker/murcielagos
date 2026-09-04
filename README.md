@@ -8,8 +8,6 @@ El objetivo principal de este trabajo es reconstruir la evolución de la ecoloca
 
 ##  Estructura del repositorio
 
-El análisis está diseñado para leer los datos de entrada y generar automáticamente la siguiente estructura de directorios de salida (`ASR_stochastic_mapping_outputs_publication/`):
-
 *   **`data/`** (Archivos de entrada necesarios):
     *   `Data.xlsx`: Matriz de caracteres (Ecolocación, depósito en cueva, depósito kárstico) codificados bajo un modelo de incertidumbre (0, 0.5, 1) y rangos estratigráficos (FAD).
     *   `Hand_et_al_2023.tre`: Muestra posterior de árboles moleculares calibrados temporalmente.
@@ -17,7 +15,7 @@ El análisis está diseñado para leer los datos de entrada y generar automátic
 *   **`scripts/`**:
     *   `A_Supplementary_ASR_stochastic_mapping_publication_ready.R`: Script principal ejecutable.
 *   **`outputs/`** (Generados por el script):
-    *   **`/Hand`** y **`/Jones`**: Resultados de la reconstrucción (AIC weights, `.csv` y `.rds` integrados).
+    *   **`/Hand`** y **`/Jones`**: Resultados de la reconstrucción (AIC weights, `.csv` integrado).
     *   **`/Reference_ASR_trees`**: Reconstrucciones de estados ancestrales (ASR) proyectadas sobre el árbol MCC de Hand y el árbol de edades medias de Jones, incluyendo gráficos *pie chart* duales en formato PDF y PNG.
     *   **`/figures/08_probability_densitrees`**: Gráficos *densitree* de probabilidad enfrentados (Ostracoderm-style) generados con `ggtree` y `patchwork`.
 
